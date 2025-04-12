@@ -479,7 +479,7 @@ class UNet(nn.Module):
                         # MultiLevelSCSA_scaler(dim=ch),
                         # MSPABlock(inplanes=ch)
                         # MSPAModule(inplanes=ch)
-                        MSPAModule(inplanes=128, scale=4)
+                        MSPAModule(inplanes=64, scale=4)
                         # MKLAttention(ch)
 
                         # MultiLevelSCSA_scaler_gn4_drop02(ch)
@@ -584,7 +584,7 @@ class UNet(nn.Module):
                         # )
                         # MultiLevelSCSA_scaler(dim=ch)
 
-                        MSPAModule(inplanes=128, scale=4)
+                        MSPAModule(inplanes=64, scale=4)
                         # DynamicMSPABlock(inplanes=ch)
                         # MKLAttention(ch)
 
